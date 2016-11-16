@@ -52,18 +52,8 @@ if (seconds <= 9) {
   seconds = '0' + seconds;
   }
 
-var clockFace = hours + '<' + minutes + '>' + seconds;
+var clockFace = hours + ':' + minutes + ':' + seconds;
   
-if (hours <= 9) {
-  hours = 'ff';
-  }
-if (minutes <= 30) {
-  minutes = 'ff';
- }
-if (seconds <= 30) {
-  seconds = '00';
-  }
-
 var hexColor = '#' + hours + minutes + seconds;
   
 document.getElementById('clock').innerHTML = clockFace;
